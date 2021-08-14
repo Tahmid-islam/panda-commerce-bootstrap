@@ -21,3 +21,17 @@ for (const element of button) {
     event.target.parentNode.removeChild(element);
   });
 }
+
+const cardBorderRadius = document.getElementsByClassName("card");
+
+for (const element of cardBorderRadius) {
+  element.style.borderRadius = "10px";
+}
+
+// document.getElementById("bags").style.backgroundColor = "tomato";
+
+document
+  .getElementById("color-change")
+  .addEventListener("dblclick", function () {
+    document.getElementById("color-change").style.backgroundColor = "#c7ecee";
+  });
